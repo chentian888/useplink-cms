@@ -1,0 +1,91 @@
+
+.f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.f--center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@font-face {
+  font-family: Circular Pro Book;
+  src: url(../fonts/CircularPro-Book.woff2) format("woff2"),
+    url(../fonts/CircularPro-Book.woff) format("woff");
+  font-weight: 450;
+  font-style: normal;
+}
+@font-face {
+  font-family: Circular Pro Medium;
+  src: url(../fonts/CircularPro-Medium.woff2) format("woff2"),
+    url(../fonts/CircularPro-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+.smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body,
+html {
+  width: 100%;
+}
+body {
+  font-family: Circular Pro Book, sans-serif;
+  font-size: 0.97222vw;
+  line-height: 1;
+  color: #f1f1f1;
+  background: #fff;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.show-grid:after {
+  content: "";
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  width: calc(100% + 1px);
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent calc(4.16667% - 1px),
+    rgba(255, 0, 0, 0.33) calc(4.16667% - 1px),
+    rgba(255, 0, 0, 0.33) 4.16667%
+  );
+  background-size: 100% 4.16667%;
+}
+.loading * {
+  cursor: progress !important;
+}
+
+.white-selection ::selection {
+  background-color: hsla(0, 0%, 100%, 0.99) !important;
+  color: #000;
+}
+.white-selection ::-moz-selection {
+  background-color: hsla(0, 0%, 100%, 0.99) !important;
+  color: #000;
+}
+.a,
+a,
+a:visited {
+  pointer-events: auto;
+  color: #fff;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
