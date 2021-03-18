@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#151515" />
+    <title>Plink - Create payment links and send them to your clients</title>
+    <meta
+      name="description"
+      content="Easily create payment requests and send to your customers via e-mail, SMS or by copy-pasting the link."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon/favicon-64x64.png"
+      sizes="64x64"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/images/favicon/favicon-180x180.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      id="stylesheet-css"
+      href="./assets/css/reset.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="stylesheet-css"
+      href="./assets/css/common.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="stylesheet-css"
+      href="./assets/css/frontpage.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body class="en-EN">
+    <div class="loader">
+      <span>Loading...</span>
+    </div>
+
+    <header class="header">
+      <a class="logo" name="Home" href="./index.html">
+        <span>Home</span>
+        <img
+          src="./assets/images/logo--light.svg"
+          alt="Plink logo"
+          width="57"
+          height="23"
+        />
+      </a>
+      <nav>
+        <div class="header_menu">
+          <a name="Faq" href="">FAQ</a>
+          <a name="Contact" href="chentian.ct@qq.com" target="_self">Contact</a>
+        </div>
+        <a
+          id="login"
+          name="Login with Mollie"
+          class="button"
+          href=""
+          target="_self"
+          rel="nofollow"
+          >Login with Mollie</a
+        >
+      </nav>
+    </header>
+
+    <div id="container" role="main" data-path="">
+      <div id="faq" class="faq hidden">
+        <div class="scrollable">
+          <div class="page-wrapper">
+            <section class="page_header">
+              <h1 class="title">
+                Questions<br />
+                about Plink
+              </h1>
+              <h2 class="baseline">Simple, powerful, and useful.</h2>
+            </section>
+            <section class="page_content">
+              <h2>What does Plink cost?</h2>
+              <p>
+                Plink's basic functionality is free. You only pay for the
+                regular Mollie transaction costs when the payment succeeds.
+                These costs are listed on the
+                <a href="">Mollie website</a>.
+              </p>
+              <p>
+                We do charge an additional fee for certain premium
+                functionalities. These additional costs can be found on our
+                <a href="">pricing page</a>.
+              </p>
+              <h2>How do I sign up?</h2>
+              <p>
+                Plink connects directly to your Mollie account. If you don't
+                have an account yet, you can
+                <a href="">sign up for a Mollie account here</a>. Please note
+                Mollie only allows businesses to sign up.
+              </p>
+              <h2>How do payment links work?</h2>
+              <p>
+                You simply provide an amount and a description to generate a
+                payment link. You can send these links to your customers via
+                email, WhatsApp, or whichever way suits you best.
+              </p>
+              <p>
+                Once your customer clicks on the payment link, he or she is
+                shown a payment screen where the payment can be completed. Once
+                completed, the money is transferred directly to your Mollie
+                account.
+              </p>
+              <h2>Who&#039;s behind Plink?</h2>
+              <p>
+                Plink is a side project of
+                <a href="">Mollie</a>. It's built on Mollie Connect, which
+                enables Mollie users to use Plink's functionality on top of
+                their Mollie account.
+              </p>
+              <h2>Which payment methods are supported?</h2>
+              <p>
+                Plink supports <a href="">iDEAL</a>, credit card, Bancontact,
+                and all other
+                <a href="">payment methods supported by Mollie</a>.
+              </p>
+              <h2>How do Pay Mails work?</h2>
+              <p>
+                Upload your invoice and let us know which email address we need
+                to send the invoice to. We will take care of the rest, and you
+                will be able to keep track of the payment status in real time.
+              </p>
+              <h2>Is there a Plink API?</h2>
+              <p>
+                We're planning to add more basic functionality to Plink first,
+                before we build more advanced features like an API. If the
+                <a href="">Mollie API</a>
+                covers your use case, we would currently advise implementing
+                that instead.
+              </p>
+            </section>
+          </div>
+          <footer class="footer nav-switch" data-switch-color="#FFFFFF">
+            <div class="video-background prllx force-end" data-prllx-d="200">
+              <div class="footer_video">
+                <video class="" autoplay loop muted playsinline>
+                  <source src="./assets/videos/loop.webm" type="video/webm" />
+                  <source src="./assets/videos/loop.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="home_titles">
+              <h1 class="title">Start for<br />free today</h1>
+              <a
+                class="footer_cta button"
+                rel="nofollow"
+                name="Login with mollie"
+                href=""
+                target="_blank"
+                rel="noopener"
+                ><h2>Login with Mollie</h2></a
+              >
+            </div>
+            <div class="footer_bottom">
+              <div class="powered-by">
+                Plink is powered by
+                <a href="" target="_blank" rel="noopener">Mollie</a>
+              </div>
+              <div class="copyright">
+                Copyright © 2021 Mollie B.V. All rights reserved.
+              </div>
+              <nav>
+                <div class="lang-select">
+                  <div class="lang-select-btn">
+                    <span class="title">English</span>
+                    <span class="icon">
+                      <svg
+                        width="5"
+                        height="4"
+                        viewBox="0 0 5 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.707107 0.0859375L3.03422 2.41305L2.32711 3.12016L0 0.793044L0.707107 0.0859375Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M4.0356 0L1.62002 2.41558L2.32713 3.12268L4.7427 0.707107L4.0356 0Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="lang-select-list">
+                    <ul>
+                      <li id="nl">
+                        <a name="Nederlands" href="" target="_self">
+                          Nederlands
+                        </a>
+                      </li>
+                      <li id="de">
+                        <a name="Deutsch" href="" target="_self"> Deutsch </a>
+                      </li>
+                      <li id="fr">
+                        <a name="français" href="" target="_self"> français </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/gsap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendor.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>
