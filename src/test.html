@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        scroll-snap-type: y mandatory;
+      }
+
+      .panel {
+        scroll-snap-align: start;
+      }
+
+      .red {
+        background-color: #cf3535;
+        background-image: none;
+      }
+
+      .panel p {
+        font-size: 32px;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        font-family: "Signika Negative", sans-serif, Arial;
+      }
+
+      .panel {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+      /* body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+      } */
+    </style>
+  </head>
+  <body>
+    <section class="panel blue">
+      <h1>Pair with CSS Scroll Snapping</h1>
+    </section>
+
+    <section class="panel orange">
+      <p>This element will spin.</p>
+    </section>
+
+    <section class="panel red">
+      <p>This background color will change</p>
+    </section>
+
+    <section class="panel blue yoyo">
+      <p>Yoyo Text!</p>
+    </section>
+
+    <header>
+      <a href="https://greensock.com/scrolltrigger">
+        <img
+          class="greensock-icon"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg"
+          width="200"
+          height="64"
+        />
+      </a>
+    </header>
+  </body>
+</html>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+></script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.defaults({
+    toggleActions: "restart pause resume pause",
+  });
+
+  gsap.to(".orange p", {
+    scrollTrigger: ".orange",
+    duration: 2,
+    rotation: 360,
+  });
+
+  gsap.to(".red", {
+    scrollTrigger: {
+      trigger: ".red",
+      toggleActions: "restart pause reverse pause",
+    },
+    duration: 1,
+    backgroundColor: "#FFA500",
+    ease: "none",
+  });
+
+  gsap.to(".yoyo p", {
+    scrollTrigger: ".yoyo",
+    scale: 2,
+    repeat: -1,
+    yoyo: true,
+    ease: "power2",
+  });
+</script>
