@@ -989,3 +989,26 @@
   pointer-events: auto;
   font-size: 5.55556vw;
 }
+.footer-nav-link{
+  position: absolute;
+  right: 100px;
+  display: flex;
+}
+.footer-nav-link li{
+  padding: 0.4em 0 0.4em 0.95em;
+}
+/* .scrollable {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+} */
+/* .home_send{
+  height: 100vh;
+  background-color: #fff;
+
+}
+.home_send .home_titles{
+  color: #000;
+} */
