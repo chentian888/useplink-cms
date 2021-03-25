@@ -402,11 +402,11 @@
                           this.parser.hash,
                         n = "true" === t.getAttribute("data-prevent"),
                         r = "true" === t.getAttribute("data-popin");
-                      history.pushState(
-                        { prevented: n, popin: r },
-                        document.title,
-                        o
-                      );
+                      // history.pushState(
+                      //   { prevented: n, popin: r },
+                      //   document.title,
+                      //   o
+                      // );
                     }
                   },
                 },
@@ -2924,9 +2924,9 @@
                   return this._navColor;
                 },
                 set: function (e) {
-                  (this._navColor = e),
-                    TweenLite.to(this.navDom, 0.1, { color: e }),
-                    TweenLite.to(this.logoSvg, 0.1, { fill: e });
+                  // (this._navColor = e),
+                  //   TweenLite.to(this.navDom, 0.1, { color: e }),
+                  //   TweenLite.to(this.logoSvg, 0.1, { fill: e });
                 },
               },
             ]),
