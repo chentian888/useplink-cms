@@ -831,6 +831,7 @@
 }
 .is-mobile .home_scan {
   padding-bottom: 0;
+  padding-top: 0;
 }
 .home_scan .prllx {
   overflow: visible;
@@ -909,10 +910,10 @@
   visibility: hidden;
 }
 .is-mobile .home_scan_qr-code {
-  width: 108vw;
-  height: 108vw;
-  margin-left: -4vw;
-  margin-top: 12vw;
+  width: 100vw;
+  height: 100vw;
+  /* margin-left: -4vw;
+  margin-top: 12vw; */
   opacity: 1;
   visibility: visible;
 }
@@ -942,7 +943,7 @@
 }
 .is-mobile .home_payment {
   padding-top: 30vw;
-  margin-top: -35vw;
+  /* margin-top: -35vw; */
   background: #fff;
 }
 .home_payment .prllx {
