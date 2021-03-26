@@ -4,12 +4,12 @@ const sections = document.querySelectorAll(".section");
 const header_menu = document.querySelectorAll(".header_menu");
 let clickLogoBack = false;
 function goToSection(section) {
-  const color = section.getAttribute('data-switch-color')
+  const color = section.getAttribute("data-switch-color");
   gsap.to(header_menu, 0.1, { color: color }),
-  gsap.to(window, {
-    scrollTo: { y: section},
-    duration: 1,
-  });
+    gsap.to(window, {
+      scrollTo: { y: section },
+      duration: 1,
+    });
 }
 
 sections.forEach((section) => {
@@ -35,4 +35,11 @@ logo.addEventListener("click", () => {
       clickLogoBack = false;
     },
   });
+});
+
+var mySwiper = new Swiper(".swiper-container", {
+  loop: true, // 循环模式选项
+  slidesPerView: 4,
+  spaceBetween: 25,
+  autoplay: true,
 });

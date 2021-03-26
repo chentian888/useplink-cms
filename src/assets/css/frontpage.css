@@ -751,16 +751,17 @@
   background-color: #fff;
 }
 .home_send_wrapper {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  margin: 0 40px;
+  margin: 0 40px; */
 }
 /* ********** CONTENT ************** */
 .home1_cona {
   text-align: center;
   position: relative;
   cursor: pointer;
-  width: 20%;
+  height: 600px;
+  /* width: 20%; */
   /* padding: 5px 253px 5px 0; */
 }
 
@@ -921,6 +922,7 @@
   align-items: center;
   padding: 12vw 0 9vw 0;
   background: #222;
+  overflow: hidden;
 }
 .is-mobile .home_scan {
   padding-bottom: 0;
